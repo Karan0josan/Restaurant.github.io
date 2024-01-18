@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wok of china</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="description" content="Home page of this little store webiste">
+    <meta name="keywords" content="HTML, Web Design, CSS, chinease,china,asia,restaurant">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="menu.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+           <a href="index.html"> <img src="/images/nav logo.avif" alt="logo" id="logo"></a>
+            <a href="https://www.instagram.com/" class="filter"><img src="/images/instagram.png" alt="instagram" id="instagram"></a>
+            <a href="https://www.facebook.com/" class="filter"><img src="/images/facebook.png" alt="facebook" id="facebook"></a>
+            <a href="https://twitter.com/?lang=en" class="filter"><img src="/images/twitter.png" alt="twitter" id="twitter"></a>
+            <ul class="topnav">
+    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="https://www.ubereats.com/ca" target="_blank">Order Now</a></li>
+                <li><a href="reservation.html"> Make Reservation</a></li>
+                
+                
+    
+    
+            </ul>
+    
+        </nav>
+    </header>
+ <main>
+    <marquee id="slide" style="font-size: 50px;" behavior="scroll" direction="left">Wok of China</marquee>
+    <div id="menu">
+        <ul>
+       <li> <a href="#top">APPETIZER</a></li>
+       <li><a href="#soup">SOUP</a></li>
+       <li><a href="#veggie">VEGGIE</a></li>
+       <li> <a href="#chicken">CHICKEN</a></li>
+       <li><a href="#seafood">SEAFOOD</a></li>
+       <li><a href="#beef">BEEF</a></li>
+       <li><a href="#rice">RICE</a></li>
+       <li><a href="#noodle">NOODLE</a></li>
+       <li><a href="#dessert">DESSERT</a></li>
+    </ul>
+    </div>
+    <section id="text">
+    <p id="appetizer">Appetizer</p>
+    <div class="full-img" id="fullImgBox">
+        <img  width="600" height="500" id="fullImg">
+        <span onclick="closeFullImg()">x</span>
+    </div>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+    </script>
+    <div class="a">
+        <img src="/images/menu/Almond-Fish.jpg" alt="Almond Fish" id="second" onmouseover="functionThree()" onmouseout="functionFour()" onclick="openFullImg(this.src)" >
+    </div>
+       <p class="a2">ALMOND FISH</p>
+        <div class="description"><p>Lightly battered fish fillets covered w/almond slices, deep fried to golden brown; served w/sweet 
+             chili sauce.</p></div>
+        <p class="a3">$10.99</p>
+<div class="a">
+    <img src="/images/menu/Deep-Fried-Tofu.jpg" alt="Deep Fried Tofu" id="first"  onmouseover="functionOne()" onmouseout="functionTwo()" onclick="openFullImg(this.src)">
+</div>
+<p class="a2">CRISPY TOFU</p>
+    <div class="description"><p> Tofu deep fried to golden crispy; served w/garlic soy sauce.</p></div>
+<p class="a3">$6.99</p>
+<div class="a">
+    <img src="/images/menu/Sparerib-Bites-in-Rice-Powder.jpg" alt="Sparerib Bites in Rice Powder" id="third" onmouseover="functionFive()" onmouseout="functionSix()" onclick="openFullImg(this.src)">
+</div>
+<p class="a2">SPARERIB BITES IN RICE POWDER</p>
+   <div class="description"><p>Served on a bed of sweet potatoes in a piping hot bamboo steamer</p></div> 
+
+<p class="a3">$11.99</p>
+<div class="a"><img src="/images/menu/Dan-Dan-Noodle.jpg" alt="Dan Dan Noodle" id="four"  onmouseover="functionSeven()" onmouseout="functionEight()" onclick="openFullImg(this.src)"></div>
+<p class="a2">DAN DAN NOODLE (PORK)</p>
+   <div class="description"><p>Noodles tossed w/minced pork in spicy Szechuan sauce, topped w/crushed peanuts.</p></div> 
+<p class="a3">$10.99</p>
+<p id="soup">Soup</p>
+<div class="a"><img src="/images/menu/Vege-Soup.jpg" alt="Vege Soup" id="five"  onmouseover="function9()" onmouseout="function10()" onclick="openFullImg(this.src)"></div>
+<p class="a2">VEGETABLE SOUP</p>
+   <div class="description"><p> A delightful clear soup w/tomato, tofu, enoki mushrooms & seaweed.</p></div>
+
+<p class="a3">$7.99</p>
+<div class="a"><img src="/images/menu/Hot-Sour-Soup.jpg" alt="Hot Sour Soup" id="six"  onmouseover="function11()" onmouseout="function12()" onclick="openFullImg(this.src)"></div>
+<p class="a2">HOT & SOUR SOUP (CHICKEN)</p>
+   <div class="description"><p>Egg drop soup w/chicken, bamboo shoots, tofu, Chinese mushroom, black fungus & dried lilies.</p></div> 
+<p class="a3">$8.99</p>
+<div class="a"><img src="/images/menu/Wonton-Soup.jpg" alt="Wonton Soup" id="seven"  onmouseover="function13()" onmouseout="function14()" onclick="openFullImg(this.src)"></div>
+<p class="a2">WONTON SOUP (PORK)</p>
+   <div class="description"><p>Pork filled wontons hand-wrapped daily to ensure its freshness & flavor; served in tasty chicken broth.</p></div> 
+ 
+<p class="a3">$8.99</p>
+<p id="veggie">Veggie</p>
+<div class="a"> <img src="/images/menu/Eggplant.jpg" alt="Braised Eggplant" id="eight"  onmouseover="function15()" onmouseout="function16()" onclick="openFullImg(this.src)"></div>
+<p class="a2">BRAISED EGGPLANT</p>
+<div class="description"><p>Egg plant braised w/bean paste & basil</p></div>   
+<p class="a3">$16.99</p>
+<div class="a"><img src="/images/menu/Braised-Tofu.jpg" alt="Braised Tofu" id="nine"  onmouseover="function17()" onmouseout="function18()" onclick="openFullImg(this.src)"></div>
+<p class="a2">Braised TOFU</p>
+  <div class="description"><p>Deep fried tofu braised w/bamboo shoots, carrots & Chinese mushroom.</p></div>  
+
+<p class="a3">$15.99</p>
+<p id="chicken">Chicken</p>
+
+<div class="a"><img src="/images/menu/BBQ-Chicken.jpg" alt="BBQ Chicken" id="ten"  onmouseover="function19()" onmouseout="function20()" onclick="openFullImg(this.src)"></div>
+<p class="a2">BBQ CHICKEN</p>
+<div class="description"><p>Tender grilled chicken w/our mouth-watering sweet BBQ sauce.</p></div> 
+<p class="a3">$17.99</p>
+<div class="a"><img src="/images/menu/Black-Bean-Chicken.jpg" id="eleven"  onmouseover="function21()" onmouseout="function22()" onclick="openFullImg(this.src)"></div>
+<p class="a2">BLACK BEAN CHICKEN</p>
+  <div class="description"><p>Tender chicken stir fried w/onion, bell peppers & garlic in a flavorful black bean sauce.</p></div>  
+<p class="a3">$17.99</p>
+<div class="a"><img src="/images/menu/Kung-Pao-Chicken.jpg" alt="Kung Pao Chicken" id="twelve"  onmouseover="function23()" onmouseout="function24()" onclick="openFullImg(this.src)"></div>
+<p class="a2">KUNG PAO CHICKEN</p>
+<div class="description"><p>Lightly battered chicken stir fried w/dry chilies in a sweet & spicy sauce; topped w/roasted cashew nuts.</p></div> 
+<p class="a3">$17.99</p>
+<p id="seafood">Sea Food</p>
+<div class="a"><img src="/images/menu/Shrimp-Lettuce-Wrap.jpg" alt="Shrimp Lettuce Wrap" id="thirteen"  onmouseover="function25()" onmouseout="function26()" onclick="openFullImg(this.src)"></div>
+<p class="a2">SHRIMP LETTUCE WRAP</p>
+ <div class="description"><p>Fresh lettuce leaves hold a refreshing mixture of shrimp, onion, celery, carrots, water chestnuts & crushed youtiao; sprinkled w/pine seeds.</p></div> 
+<p class="a3">$22.99</p>
+<div class="a"><img src="/images/menu/Szechuan-Scallops.jpg" alt="Szechuan Scallops" id="fourteen"  onmouseover="function27()" onmouseout="function28()" onclick="openFullImg(this.src)"></div>
+<p class="a2">SZECHUAN SCALLOPS</p>
+<div class="description"><p>Jumbo scallops sautéed w/water chestnuts, minced garlic, ginger & green onion in a delightful sweet & spicy sauce.</p></div> 
+<p class="a3">$31.99</p>
+<div class="a"><img src="/images/menu/Sweet-Sour-Fish.jpg" alt="Sweet Sour Fish" id="fiveteen"  onmouseover="function29()" onmouseout="function30()" onclick="openFullImg(this.src)"></div>
+<p class="a2">SWEET SOUR FISH</p>
+<div class="description"><p> Fish fillets stir fried w/onion, fresh pineapple & bell peppers in a tasty sweet & sour sauce.</p></div>
+<p class="a3">$16.99</p>
+<p id="beef">Beef</p>
+<div class="a"><img src="/images/menu/Braised-Short-Ribs.jpg" alt="Braised Short Ribs" id="sixteen"  onmouseover="function31()" onmouseout="function32()" onclick="openFullImg(this.src)"></div>
+<p class="a2">BRAISED SHORT RIBS</p>
+ <div class="description"><p>Premium short ribs slow cooked w/onion, carrots, celery, potato & mushroom in a savory tomato sauce; served in a casserole.</p></div> 
+<p class="a3">$27.99</p>
+<div class="a"><img src="/images/menu/Black-Pepper-Beef.jpg" alt="Black Pepper Beef" id="seventeen"  onmouseover="function33()" onmouseout="function34()" onclick="openFullImg(this.src)"></div>
+<p class="a2">BLACK PEPPER BEEF</p>
+<div class="description"><p> Marinated flank steak tossed w/onion & bell peppers in a black pepper sauce.</p></div>
+<p class="a3">$19.99</p>
+<div class="a"><img src="/images/menu/Ginger-Beef.jpg" alt="Ginger beef" id="eighteen"  onmouseover="function35()" onmouseout="function36()" onclick="openFullImg(this.src)"></div>
+<p class="a2">GINGER BEEF</p>
+ <div class="description"><p>Tender flank steak stir-fried then quickly tossed w/shredded ginger & green onion.</p></div> 
+<p class="a3">$19.99</p>
+<p id="rice">Rice</p>
+<div class="a"><img src="/images/menu/Lee-Chen-Fried-Rice.jpg" alt="Lee Chen Fried Rice" id="nineteen"  onmouseover="function37()" onmouseout="function38()" onclick="openFullImg(this.src)"></div>
+<p class="a2">LEE CHEN FRIED RICE (SHRIMPS AND CHICKEN)</p>
+<div class="description"><p>Egg fried rice w/shrimps, BBQ chicken, lettuce, onion, carrots & green peas.</p></div> 
+<p class="a3">$18.99</p>
+<div class="a"><img src="/images/menu/Vege-Egg-Fried-Rice.jpg" alt="VEGETABLE & EGG FRIED RICE" id="twenty"  onmouseover="function39()" onmouseout="function40()" onclick="openFullImg(this.src)"></div>
+<p class="a2">VEGETABLE & EGG FRIED RICE</p>
+ <div class="description"><p> Egg fried rice w/deep-fried tofu cubes, lettuce, onion, carrots & green peas.</p></div>
+<p class="a3">$15.99</p>
+<p id="noodle">Noodle</p>
+<div class="a"><img src="/images/menu/Shanghai-Fried-Noodle.jpg" alt="Shanghai Fried Noodle" id="twentyone"  onmouseover="function41()" onmouseout="function42()" onclick="openFullImg(this.src)"></div>
+<p class="a2">SHANGHAI FRIED NOODLE(CHICKEN)</p>
+ <div class="description"><p>S style noodles stir fried w/shredded chicken, cabbage, green onion & Chinese mushroom.</p></div> 
+<p class="a3">$16.99</p>
+<div class="a"><img src="/images/menu/Chow-Mein.jpg" alt="chow mein" id="twentytwo"  onmouseover="function43()" onmouseout="function44()" onclick="openFullImg(this.src)"></div>
+<p class="a2">CHOW MEIN</p>
+ <div class="description"><p>Egg noodles stir fried w/onion, carrots, bean sprouts & green onion.</p></div> 
+<p class="a3">$13.99</p>
+<div class="a"><img src="/images/menu/House-Fried-Noodle.jpg" alt="House Fried Noodle" id="twentythree"  onmouseover="function45()" onmouseout="function46()" onclick="openFullImg(this.src)"></div>
+<p class="a2">HOUSE FRIED NOODLE(PORK)</p>
+<div class="description"><p>Noodles stir fried w/shredded pork, bamboo shoots & pickled mustard greens.</p></div> 
+<p class="a3">$17.99</p>
+<div class="a"><img src="/images/menu/Beef-Soup-Noodle.jpg" alt="Beef Soup Noodle" id="twentyfour"  onmouseover="function47()" onmouseout="function48()" onclick="openFullImg(this.src)"></div>
+<p class="a2">Beef soup noodle</p>
+ <div class="description"><p> Noodles in a braised beef brisket soup; the rich soup is hearty enough to serve as a main course.</p></div>
+<p class="a3">$16.99</p>
+<p id="dessert">Dessert</p>
+<div class="a"><img src="/images/menu/Sesame-Balls.jpg"  alt="Sesame Balls" id="twentyfive"  onmouseover="function49()" onmouseout="function50()" onclick="openFullImg(this.src)"></div>
+<p class="a2">GOLDEN FRIED SESAME BALLS(6)</p>
+<div class="description"><p>Filled w/delicious red bean paste.</p></div> 
+<p class="a3">$8.99</p>
+<div class="a"><img src="/images/menu/Tang-Yuan-Peanuts.jpg" alt=" TANG YUAN COATED PEANUTS" id="twentysix"  onmouseover="function51()" onmouseout="function52()" onclick="openFullImg(this.src)"></div>
+<p class="a2">TANG YUAN COATED W/GROUND PEANUTS (6)</p>
+<div class="description"><p>Steamed glutinous rice balls filled w/black sesame paste.</p></div> 
+<p class="a3">$8.99</p>
+<div class="a"><img src="/images/menu/Tang-Yuan-Clear-Soup.jpg" alt="Tang Yuan in Clear Soup" id="twentyseven"  onmouseover="function53()" onmouseout="function54()" onclick="openFullImg(this.src)"></div>
+<p class="a2">TANG YUAN CLEAR SOUP(6)</p>
+<div class="description"><p> Hinted w/fragrant Osmanthus.</p></div>
+<p class="a3">8.99</p>
+<div class="a"><img src="/images/menu/Tang-Yuan-Wine-Soup.jpg" alt="Tang Yuan in wine soup" id="twentyeight"  onmouseover="function55()" onmouseout="function56()" onclick="openFullImg(this.src)"></div>
+<p class="a2">TANG YUAN IN WINE SOUP(6)</p>
+<div class="description"><p> Hinted w/fragrant Osmanthus.</p></div> 
+<p class="a3">$9.99</p>
+</section>
+    
+    
+ </main>
+ <footer>
+    <p id="footer">© 2023 Wok of China &nbsp;&nbsp;&nbsp;All rights reserved.</p>
+ </footer>
+    
+</body>
+<script src="menu.js" defer></script>
+</html>

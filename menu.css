@@ -1,0 +1,153 @@
+div.a{margin-top: 100px;}
+div.a img{float: left;}
+
+html{
+    color: white;
+}
+div#menu{
+    display: flex;
+    position: fixed;
+    float: left;
+    width: 160px;
+    top: 110px;
+
+}
+
+div#menu ul li{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: space-evenly;
+    list-style: none;
+}
+div#menu ul li a{
+    color: #b98f5f;
+}
+section#text{
+    margin-left: 200px;
+}
+div.a img{
+    height: 150px;
+    width: 200px;
+    cursor: pointer;
+}
+p.a2{
+    text-align: center;
+}
+p.a2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+p.a3{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 200px;
+}
+div.description{
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 100px;
+    margin-top: 50px;
+    font-size: 19px;
+}
+p#veggie, #chicken, #soup, #seafood, #beef, #rice, #noodle, #dessert {
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #b98f5f;
+}
+p#appetizer{
+    text-align: center;
+    margin-left: 200px;
+    font-size: 40px; 
+    font-weight: bold;
+    color: #b98f5f;
+}
+div.a img:hover {
+    /* transform: scale(0.9) rotate(-15deg); */
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(218, 226, 227, 0.9);
+}
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+}
+
+.full-img {
+    width: 100%;
+    max-width: 500%;
+}
+
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+#slide{
+    margin-left: 150px;
+}
+
+section#location{
+    margin: 70px;
+    
+}
+@media only screen and (max-width: 320px) {
+    div#menu{
+        margin-top: 50px;
+        
+    }
+    nav{width: 480px;}
+    div.description{
+        margin-left: -300px;
+        width: 100%;
+    }
+    p.a3{
+        margin-left: -30px;
+    }
+    p.a2{
+        margin-top: 300px;
+    }
+    p#veggie, #chicken, #soup, #seafood, #beef, #rice, #noodle, #dessert {
+        margin-top: 100px;
+        text-align: center;
+        margin-left: -15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #b98f5f;
+    }
+    p#appetizer{
+        text-align: center;
+        margin-left: -15px;
+        font-size: 40px; 
+        font-weight: bold;
+        color: #b98f5f;
+    }
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+        font-weight: bold;
+        padding-left: 25px;
+        margin: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        
+    }
+
+}

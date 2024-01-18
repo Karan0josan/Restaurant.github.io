@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wok of china</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="description" content="Home page of this little store webiste">
+    <meta name="keywords" content="HTML, Web Design, CSS, chinease,china,asia,restaurant">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="reviews.css" type="text/css">
+    <!-- <link rel="stylesheet" href="reservation.css" type="text/css"> -->
+    
+ </head>
+ <body>
+    <header>
+        <nav>
+           <a href="index.html"><img src="/images/nav logo.avif" alt="logo" id="logo"></a>
+            <a href="https://www.instagram.com/" class="filter"><img src="/images/instagram.png" alt="instagram" id="instagram"></a>
+            <a href="https://www.facebook.com/" class="filter"><img src="/images/facebook.png" alt="facebook" id="facebook"></a>
+            <a href="https://twitter.com/?lang=en" class="filter"><img src="/images/twitter.png" alt="twitter" id="twitter"></a>
+            <ul>
+    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="https://www.ubereats.com/ca" target="_blank">Order Now</a></li>
+                <li><a href="reservation.html"> Make Reservation</a></li>
+                
+                
+    
+    
+            </ul>
+    
+        </nav>
+    </header>
+    <marquee id="slide" style="font-size: 50px;" behavior="scroll" direction="left">Wok of China</marquee>
+
+    <main>
+
+        <div id="image-section">
+            <img src="images/review image.jpg" alt="family image">
+            <!-- ackground-image: url(images/review\ image.jpg); -->
+        </div>
+
+        <div class="content">
+            <h1 id="reviewtitle">Reviews</h1>
+            <p>If you would like to leave a review we would greatly appreciate it!</p>
+            <p>Positive or negative we welcome all constructive critisism.</p>
+        </div>
+        <div class="form">
+            <h1>Contact us!</h1>
+            <form action="" >
+            <label for="fname">Your Name</label>
+              <input style="color: white;" type="text" id="fname" required>
+              <br>
+            <label for="text">Email</label>
+            <input style="color: white;" type="text" id="text">
+              <br>
+              <label for="phone">Phone</label>
+              <input type="tel" style="color: white;" id="phone"placeholder="498-348-3872"required>
+              <br>
+              <label for="subject">Subject</label>
+              <input style="color: white;" type="text" id="subject" placeholder="Subject">
+              <label for="help">Message</label>
+              <br>
+              
+              <textarea style="color: white;" rows="6" id="help" placeholder="How can we help you? Let us know."></textarea>
+              
+            <button id="contact" onclick="printEerror()" type="button">Send Message</button>
+            </form>
+          </div>
+          
+
+    </main>
+
+    <footer id="reviews">
+
+        <p id="footer">© 2023 Wok of China &nbsp;&nbsp;&nbsp;All rights reserved.</p>
+    </footer>
+    
+ <script src="contact.js" defer></script>
+ </body>
+</html>

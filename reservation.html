@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wok of china</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="description" content="Home page of this little store webiste">
+    <meta name="keywords" content="HTML, Web Design, CSS, chinease,china,asia,restaurant">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="reservation.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+           <a href="index.html"> <img src="/images/nav logo.avif" alt="logo" id="logo"></a>
+            <a href="https://www.instagram.com/" class="filter"><img src="/images/instagram.png" alt="instagram" id="instagram"></a>
+            <a href="https://www.facebook.com/" class="filter"><img src="/images/facebook.png" alt="facebook" id="facebook"></a>
+            <a href="https://twitter.com/?lang=en" class="filter"><img src="/images/twitter.png" alt="twitter" id="twitter"></a>
+            <ul>
+    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="https://www.ubereats.com/ca" target="_blank">Order Now</a></li>
+                <li><a href="reservation.html"> Make Reservation</a></li>
+                
+                
+    
+    
+            </ul>
+    
+        </nav>
+    </header>
+    <marquee id="slide" style="font-size: 50px;" behavior="scroll" direction="left">Wok of China</marquee>
+  <main>
+  <form action="">
+    <div class="name">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required placeholder="John Doe">
+    </div>
+    <div class="name">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" placeholder="john.doe@email.com">
+    </div>
+    <div class="name">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone"placeholder="498-348-3872"required>
+    </div>
+    
+    
+    
+    <div class="name">
+      <label>For how many people</label>
+      <input id="people" type="number" min="1" required>
+    </div>
+    <div class="name">
+      <label>Date</label>
+      <input id="date" type="date" required>
+    </div>
+    <div class="name">
+      <label>Select the time Slot</label>
+      <select id="time" required>
+        <option value=""></option>
+          <option>12:00pm-1:00pm</option>
+          <option>1:00pm-2:00pm</option>
+          <option>3:00pm-4:00pm</option>
+          <option>4:00pm-5:00pm</option>
+          <option>5:00pm-6:00pm</option>
+          <option>6:00pm-7:00pm</option>
+          <option>8:00pm-9:00pm</option>
+          <option>9:00pm-10:00pm</option>
+          <option>11:00pm-12:00am</option>
+      </select>
+    </div>
+  
+    <div class="anything">
+      <label for="message">Anything Else?</label>
+      <textarea id="message" placeholder="Tell us anything else that might be important."></textarea>
+    </div>
+    <!-- <span id="error"></span> -->
+    <br><br>
+    <button id="reservation" onclick="printError()" type="button">Make Reservation</button>
+  </form>
+</main>
+
+<footer>
+  <p id="footer">© 2023 Wok of China &nbsp;&nbsp;&nbsp;All rights reserved.</p>
+</footer>
+<script src="reservation.js" defer></script>
+</body>
+</html>

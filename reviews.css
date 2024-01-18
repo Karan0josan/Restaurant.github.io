@@ -1,0 +1,106 @@
+div#image-section img {
+    margin-left: 750px;
+    position: absolute;
+    margin-top: 250px;
+    /* background-image: url(images/review\ image.jpg); */
+    width: 500px;
+    height: 690px;
+    z-index: -1;
+    background-size: 1100px 732.875px;
+}
+
+
+footer#reviews {
+    margin-top: 1000px;
+    clear: both;
+}
+body{
+    color: white;
+}
+
+
+
+.content {
+    float: right;
+    width: 45%;
+    font-size: 30px;
+    text-align: left;
+    color: rgb(194, 194, 194);
+}
+
+#reviewtitle {
+    text-align: left;
+}
+
+.content p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.form {
+    float: left;
+    width: 35%;
+    text-align: center;
+    background-color: #6e5231;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 860px;
+    width: 600px;
+
+
+    
+}
+
+.form h1 {
+    color: rgb(194, 194, 194);
+}
+
+.form form {
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 110px;
+    line-height: 30px;
+    font-size: 20px;
+    
+    
+    
+}
+
+.form #fname::placeholder, .form #help::placeholder {
+    color: rgb(194, 194, 194);
+}
+
+.form #fname, #text, #phone, #subject {
+    
+    line-height: 20px;
+    border-bottom-color: rgb(194, 194, 194);
+    background-color: #6e5231;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin-bottom: 70px;
+   
+    width: 350px;
+}
+
+.form #help {
+    border-color: rgb(194, 194, 194);
+    background-color:#6e5231;
+    
+    width: 400px;
+    margin-bottom: 70px;
+}
+@media only screen and (max-width: 800px) {
+    .image-section {
+        margin-left: 750px;
+        position: absolute;
+        margin-top: 250px;
+        background-image: url(images/review\ image.jpg);
+        max-width: 479px;
+        height: 732.875px;
+        z-index: -1;
+        background-size: 1100px 732.875px;
+    }
+    
+    
+}

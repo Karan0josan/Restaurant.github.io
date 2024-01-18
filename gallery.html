@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width  , initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="description" content="Home page of this little store webiste">
+    <meta name="keywords" content="HTML, Web Design, CSS, chinease,china,asia,restaurant">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> <img src="/images/nav logo.avif" alt="logo" id="logo"></a>
+            <a href="https://www.instagram.com/" class="filter"><img src="/images/instagram.png" alt="instagram"
+                    id="instagram"></a>
+            <a href="https://www.facebook.com/" class="filter"><img src="/images/facebook.png" alt="facebook"
+                    id="facebook"></a>
+            <a href="https://twitter.com/?lang=en" class="filter"><img src="/images/twitter.png" alt="twitter"
+                    id="twitter"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="https://www.ubereats.com/ca" target="_blank">Order Now</a></li>
+                <li><a href="reservation.html"> Make Reservation</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+    <marquee id="slide" style="font-size: 50px;" behavior="scroll" direction="left">Wok of China</marquee>
+    <div class="gallery">
+        <h2>Photo Gallery</h2><br>
+    </div>
+
+    <div class="full-img" id="fullImgBox">
+        <img width="600" height="500" id="fullImg">
+        <span onclick="closeFullImg()">x</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="images/photogallery/image1.jpg" alt="chef" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image2.jpeg" alt="staff" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image3.png" alt="family" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image5.jpg" alt="BLACK PEPPER BEEF" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image6.avif" alt="juice" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image7.jpg" alt="SWEET SOUR FISH" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image8.jpg" alt="Chow-Mein" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image9.jpg" alt="dishes" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image10.jpeg" alt="dishes" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image11.jpg" alt="BBQ CHICKEN" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image12.jpg" alt="VEGETABLE SOUP" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image13.jpg" alt="dish" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image14.jpg" alt="BLACK BEAN CHICKEN" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image15.jpg" alt="GOLDEN FRIED SESAME BALLS" onclick="openFullImg(this.src)">
+        <img src="images/photogallery/image4.png" alt="award of excellence" onclick="openFullImg(this.src)">
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+    </script>
+
+    <footer id="gallery">
+        <p id="footer">© 2023 Wok of China &nbsp;&nbsp;&nbsp;All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

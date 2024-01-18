@@ -1,0 +1,47 @@
+body {
+    color: white;
+  }
+  
+form{
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 19px;
+}
+div.name{
+    margin: 30px;
+}
+  
+  
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 7px;
+  }
+  
+  div.anything.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  
+  button {
+    height: 50px;
+    background: #6e0001;
+    border: none;
+    color: #b98f5f;
+    font-size: 1.25em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 2px solid black;
+  }
+  span#error{
+    font-size: 30px;
+  }

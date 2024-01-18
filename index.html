@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wok of china</title>
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<meta name="description" content="Home page of this little store webiste">
+	<meta name="keywords" content="HTML, Web Design, CSS, chinease,china,asia,restaurant">
+	<link rel="stylesheet" href="normalize.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<style>
+		#animation {
+			width: 100%;
+			height: 800px;
+			display: center;
+			background-image: url(images/photogallery/image5.jpg);
+			animation-name: slideshow;
+			animation-duration: 60s;
+			animation-iteration-count: infinite;
+		}
+		
+		@keyframes slideshow {
+			0% {
+				background-image: url(images/photogallery/image5.jpg);
+			}
+
+			33% {
+				background-image: url(images/photogallery/image6.avif);
+			}
+
+			66% {
+				background-image: url(images/photogallery/image7.jpg);
+			}
+
+			100% {
+				background-image: url(images/photogallery/image5.jpg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav>
+		<a href="index.html"> <img src="/images/nav logo.avif" alt="logo" id="logo"></a>
+		<a href="https://www.instagram.com/"  class="filter"><img src="/images/instagram.png" alt="instagram"
+				id="instagram"></a>
+		<a href="https://www.facebook.com/" class="filter"><img src="/images/facebook.png" alt="facebook"
+				id="facebook"></a>
+		<a href="https://twitter.com/?lang=en" class="filter"><img src="/images/twitter.png" alt="twitter"
+				id="twitter"></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="about.html">About us</a></li>
+			<li><a href="https://www.ubereats.com/ca" target="_blank">Order Now</a></li>
+			<li><a href="reservation.html"> Make Reservation</a></li>
+			<!-- <marquee id="slide" style="font-size: 50px;" behavior="scroll" direction="left">Wok of China</marquee> -->
+		</ul>
+	</nav>
+	<marquee id="slide" style="font-size: 50px;" behavior="scroll" direction="left">Wok of China</marquee>
+
+	<div id="animation">
+	</div>
+
+	<br>
+
+	<h1 id="title">Wok of China</h1>
+
+	<p id="after">We are a fine dining restaurant that specializes in using fresh, locally-sourced ingredients to create
+		exceptional cuisine. Our mission is to provide our customers with an unforgettable dining experience.
+		Step inside and be immersed in the elegant atmosphere reminiscent of old Beijing and Shanghai while
+		watching the craftsmanship of our dumpling masters bringing you the best flavours in Ontario,
+		guaranteed to have you coming back for more!
+	</p>
+	
+	<a href="https://goo.gl/maps/xDV4kSoaJegnbcz27" target="_blank"><img src="/images/Location image.jpg" alt="google map location" id="locationimage" ></a>
+	<br>
+	<br>
+
+	<aside>
+		<h1 id="timetable">Operating Hours </h1>
+		<ul id="timetable">
+			<li>Monday &nbsp&nbsp 11:30am – 12:00am </li>
+			<li>Tuesday &nbsp&nbsp 5:30pm – 12:00am</li>
+
+			<li>Wednesday &nbsp11:30am – 12:00am</li>
+			<li>Thursday &nbsp &nbsp11:30am - 12:00am</li>
+			<li>Friday &nbsp &nbsp11:30am - 2:00am</li>
+			<li>Saturday &nbsp11:30am - 1:00am</li>
+			<li>Sunday&nbsp 11:30am - 12:30am</li>
+		</ul>
+	</aside>
+
+	<section id="location">
+		<h1 id="location">Location</h1>
+		<p id="address">6640 Finch Ave W #7</p>
+		<p id="address">Etobicoke, ON M9W 0B3</p>
+	</section>
+
+	<script>
+		var images = ["images/photogallery/image5.jpg", "images/photogallery/image6.avif", "images/photogallery/image7.jpg"];
+		var currentIndex = 0;
+		var slideshow = setInterval(function () {
+			currentIndex = (currentIndex + 1) % images.length;
+			document.getElementById("slideshow-image").src = images[currentIndex];
+		}, 5000); // switch images every 5 seconds
+	</script>
+
+
+
+
+	<footer id="index">
+
+		<p id="footer">© 2023 Wok of China &nbsp;&nbsp;&nbsp;All rights reserved.</p>
+	</footer>
+
+
+
+
+
+</body>
+
+</html>
